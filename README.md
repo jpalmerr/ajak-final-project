@@ -25,6 +25,7 @@ and our AI machine will return the correct shape name.
 ## Manifesto
 
 Our project [manifesto](https://github.com/jpalmerr/ajak-final-project/blob/master/manifesto.md).
+Our [Trello board](https://trello.com/b/SAOvMM1v/ajak)
 
 ## Authors
 
