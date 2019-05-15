@@ -2,6 +2,12 @@
 
 This is our final project at Makers Academy, to be presented 24/5/19.
 
+## To install dependencies
+
+```bash
+pip3 install -r requirements.txt
+```
+
 ## Project Name
 
 Our program aims to receive a user inputted shape from:
