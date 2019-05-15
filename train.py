@@ -51,3 +51,14 @@ print("Accuracy: ", ((count + 0.0) / len(preds)) * 100)
 name = input("Enter name to save trained model: ")
 model.save(name + ".h5")
 print("Model saved")
+
+def predict():
+    "selects a random test case and shows the object, the prediction and the expected result"
+    n = randint(0, len(x_test))
+    pred = SHAPES[np.argmax(model.predict(np.array([x_test[n]])))]
+    actual = SHAPES[y_test[n]]
+    print("Actual:", actual)
+    print("Predicted:", pred)
+
+print("Making a prediction")
+predict()
