@@ -1,5 +1,4 @@
 import numpy as np
-import os
 
 def load(dir, files):
     "returning list of numpy arrays"
