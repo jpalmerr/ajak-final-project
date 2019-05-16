@@ -32,9 +32,6 @@ def set_limit(arrays, n):
                 break
             limited_list.append(item)
             i += 1
-    # print(n)
-    # print(len(arrays))
-    # print(len(limited_list))
     return limited_list
 
 def generate_labels(classes, samples):
@@ -43,8 +40,3 @@ def generate_labels(classes, samples):
     for i in range(classes):
         labels += [i] * samples
     return labels
-
-# data = load('data/', ['circles.npy'])
-# normalize(data)
-# print(set_limit([[0,1,2,3,4,5,6,7,8,9], [9, 8, 7, 6, 5, 4, 3, 2, 1]], 2))
-# print(generate_labels(5, 4))
