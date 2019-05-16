@@ -1,5 +1,7 @@
 # Ajak Final Project
 
+[![Build Status](https://travis-ci.com/jpalmerr/ajak-final-project.svg?branch=master)](https://travis-ci.com/jpalmerr/ajak-final-project)
+
 This is our final project at Makers Academy, to be presented 24/5/19.
 
 ## To install dependencies
@@ -23,10 +25,12 @@ and our AI machine will return the correct shape name.
 
 ## Technologies
 
-(subject to change)
 - Python
 - SKLearn library
-- ...
+- Keras API
+- TensorFlow
+- Google Quick Draw Dataset API
+- Travis
 
 ## Manifesto
 
