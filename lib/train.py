@@ -1,12 +1,10 @@
 import sys
 sys.path.append('./helper_modules')
-from prepare_data import *
-from sklearn.model_selection import train_test_split as tts
-from keras.utils import np_utils
-from conv import conv
-from random import randint
 from constants import *
 from load_data import *
+from keras.utils import np_utils
+from prepare_data import *
+from conv import conv
 
 Y_train = np_utils.to_categorical(y_train, N_SHAPES)
 Y_test = np_utils.to_categorical(y_test, N_SHAPES)
