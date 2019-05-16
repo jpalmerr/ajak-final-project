@@ -1,10 +1,10 @@
+from sklearn.model_selection import train_test_split as tts
 from prepare_data import *
 from constants import *
-from sklearn.model_selection import train_test_split as tts
 
-files = ["circles.npy", "squares.npy", "triangles.npy"]
+FILES = ["circles.npy", "squares.npy", "triangles.npy"]
 
-shapes = load("data/", files, True)
+shapes = load("data/", FILES, True)
 
 shapes = set_limit(shapes, N_SAMPLES)
 

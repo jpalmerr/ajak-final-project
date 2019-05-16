@@ -20,7 +20,7 @@ def load(dir, files, reshaped):
 def normalize(data):
     "returns normalized form"
 
-    return np.interp(data, [0, 255], [-1,1])
+    return np.interp(data, [0, 255], [-1, 1])
 
 def set_limit(arrays, n):
     "Limit to n elements and return a single list"
