@@ -21,7 +21,8 @@ and our AI machine will return the correct shape name.
 
 ## Performance Results
 
-*test results here*
+To run test coverage:
+`pytest --cov`
 
 ## Technologies
 
