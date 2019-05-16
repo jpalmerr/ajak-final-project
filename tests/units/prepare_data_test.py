@@ -1,7 +1,11 @@
 import pytest
 import sys
+import numpy as np
 sys.path.append('../ajak-final-project/lib')
 from prepare_data import *
+
+def test_normalize_returns_np_ndarray():
+    assert type(normalize([1,2,3,4,5])) is np.ndarray
 
 def test_set_limit_generates_single_limited_list():
     assert set_limit([[0,1,2,3], [9,8,7,6]], 2) == [0,1,9,8]
