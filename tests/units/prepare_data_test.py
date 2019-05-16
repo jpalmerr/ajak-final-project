@@ -7,6 +7,9 @@ from prepare_data import *
 def test_normalize_returns_np_ndarray():
     assert type(normalize([1,2,3,4,5])) is np.ndarray
 
+def test_normalize_returns_value_between_1_and_minus_1():
+    assert -1 <= normalize([1])[0] <= 1
+
 def test_set_limit_generates_single_limited_list():
     assert set_limit([[0,1,2,3], [9,8,7,6]], 2) == [0,1,9,8]
 
