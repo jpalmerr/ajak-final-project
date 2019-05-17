@@ -15,3 +15,8 @@ def test_reshape_image_is_nparray():
     drawing = Drawing(test_image)
     drawing = drawing.reshape()
     assert type(drawing) is np.ndarray
+
+def test_reshape_image_is_normalized():
+    drawing = Drawing(test_image)
+    drawing = drawing.reshape()
+    assert -1 <= drawing.all() <= 1
