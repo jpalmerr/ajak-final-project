@@ -2,7 +2,7 @@ import pytest
 import sys
 import numpy as np
 from PIL import Image
-sys.path.append('../ajak-final-project/lib')
+sys.path.append('./lib')
 from drawing import *
 
 test_image = Image.open("tests/temp.png")

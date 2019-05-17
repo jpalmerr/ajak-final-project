@@ -1,7 +1,7 @@
 import pytest
 import sys
 import numpy as np
-sys.path.append('../ajak-final-project/lib')
+sys.path.append('./lib')
 from prepare_data import *
 
 def test_normalize_returns_np_ndarray():
