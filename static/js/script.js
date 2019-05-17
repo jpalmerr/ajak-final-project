@@ -13,8 +13,6 @@
 	context.lineWidth = 5;
     context.lineJoin = context.lineCap = 'round';
 
-	debug();
-
 	canvas.addEventListener( "mousemove", function( e )
 	{
 		lastMouse.x = Mouse.x;
@@ -51,7 +49,7 @@
 		context.stroke();
 	};
 
-	function debug()
+	function clear()
 	{
 		/* CLEAR BUTTON */
 		var clearButton = $( "#clearButton" );
@@ -67,20 +65,5 @@
 
 		});
 
-		// /* COLOR SELECTOR */
-
-		// $( "#colors" ).change(function()
-		// {
-		// 	var color = $( "#colors" ).val();
-		// 	context.color = color;
-		// });
-
-		/* LINE WIDTH */
-
-		$( "#lineWidth" ).change(function()
-		{
-			context.lineWidth = $( this ).val();
-		});
 	}
 }());
-
