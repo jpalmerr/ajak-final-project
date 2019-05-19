@@ -4,12 +4,12 @@ from constants import *
 
 FILES = ["circles.npy", "squares.npy", "triangles.npy"]
 
-shapes = load("data/", FILES, True)
+items = load("data/", FILES, True)
 
-shapes = set_limit(shapes, N_SAMPLES)
+items = set_limit(items, N_SAMPLES)
 
-shapes = list(map(normalize, shapes))
+items = list(map(normalize, items))
 
-labels = generate_labels(N_SHAPES, N_SAMPLES)
+labels = generate_labels(N_ITEMS, N_SAMPLES)
 
-x_train, x_test, y_train, y_test = tts(shapes, labels, test_size=0.10)
+x_train, x_test, y_train, y_test = tts(items, labels, test_size=0.10)

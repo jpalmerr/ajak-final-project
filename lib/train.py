@@ -6,10 +6,10 @@ from keras.utils import np_utils
 from prepare_data import *
 from conv import conv
 
-Y_train = np_utils.to_categorical(y_train, N_SHAPES)
-Y_test = np_utils.to_categorical(y_test, N_SHAPES)
+Y_train = np_utils.to_categorical(y_train, N_ITEMS)
+Y_test = np_utils.to_categorical(y_test, N_ITEMS)
 
-model = conv(classes=N_SHAPES, input_shape=(28, 28, 1))
+model = conv(classes=N_ITEMS, input_shape=(28, 28, 1))
 
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 
