@@ -34,12 +34,9 @@ Our program aims to receive a user inputted shape from:
 - square
 - triangle
 
-and our AI machine will return the correct shape name.
+and our AI machine will return a prediction of the shape name.
 
 ## Performance Results
-
-To run test coverage:
-`pytest --cov=lib`
 
 ## Technologies
 
@@ -48,7 +45,25 @@ To run test coverage:
 - Keras API
 - TensorFlow
 - Google Quick Draw Dataset
-- Travis
+- Travis CI
+
+## Tests
+
+The `pytest` framework is used for unit testing.
+
+To run tests:
+`pytest`
+
+To run test coverage:
+`pytest --cov=lib`
+
+## Style
+
+We are using a linter called `pylint` for this project.
+
+To run the linter:
+
+`pylint [options] module_or_package`
 
 ## Manifesto
 
