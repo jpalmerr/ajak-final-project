@@ -11,8 +11,8 @@ def predict_on_test_data():
     n = randint(0, len(x_test))
     pred = ITEMS[np.argmax(model.predict(np.array([x_test[n]])))]
     actual = ITEMS[y_test[n]]
+    print("Making a prediction")
     print("Actual:", actual)
     print("Predicted:", pred)
 
-print("Making a prediction")
 predict_on_test_data()
