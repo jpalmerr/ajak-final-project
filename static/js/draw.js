@@ -5,6 +5,8 @@
     isDrawingMode: true
   });
 
+  canvas.freeDrawingBrush.width = 5;
+
   fabric.Object.prototype.transparentCorners = false;
 
   var clearEl = $('clear-canvas');

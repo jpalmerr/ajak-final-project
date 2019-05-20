@@ -7,15 +7,15 @@
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.0.0/fabric.min.js"></script>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 
   </head>
   <body>
     <h1> AJAK's first Flask app</h1>
     <p> Machine Learning is Fun </p>
 
-    <canvas id="canvas" width="280" height="280" style="float:left;border:8px solid; border-radius: 10px; cursor: crosshair;"></canvas>
-    <button type="button" id="clear-canvas">Clear</button>
+    <canvas id="canvas" width="280" height="280" class="canvas"></canvas>
+    <button type="button" id="clear-canvas" class="clear-button">Clear</button>
     <a id="predictButton" href="#" role="button">Predict</a>
     <span id="result"></span>
 
