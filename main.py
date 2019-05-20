@@ -4,6 +4,7 @@ sys.path.append('./lib')
 from drawing import *
 # from prediction import *
 import base64
+import re
 
 app = Flask(__name__)
 
@@ -19,9 +20,11 @@ def home():
 
 @app.route('/predict/', methods=['GET', 'POST'])
 def predict():
+
     imgData = request.get_data()
+    imgData = convertImage(imgData)
     drawing = Drawing(imgData)
-    drawing = drawing.reshape()
+    response = drawing.reshape()
     # prediction = Prediction(drawing)
 
 if __name__ == "__main__":
