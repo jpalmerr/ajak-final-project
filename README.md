@@ -13,6 +13,10 @@ git clone https://github.com/jpalmerr/ajak-final-project
 pip3 install -r requirements.txt # to install dependencies
 ```
 
+```bash
+npm install
+```
+
 ### To download data
 
 Download `Circle`, `Square` and `Triangle` from [Google QuickDraw Dataset](https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/numpy_bitmap) and save to `/data` folder in the project.
