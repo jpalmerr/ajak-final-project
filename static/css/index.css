@@ -1,0 +1,13 @@
+h1 {
+  color: blue;
+}
+.canvas {
+  float:left;
+  border: 8px solid;
+  border-radius: 10px;
+  cursor: crosshair;
+}
+
+.clear-button {
+  margin-top: 25px;
+}
