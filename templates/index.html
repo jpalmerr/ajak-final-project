@@ -16,7 +16,14 @@
 
     <canvas id="canvas" width="280" height="280" style="float:left;border:8px solid; border-radius: 10px; cursor: crosshair;"></canvas>
     <button type="button" id="clear-canvas">Clear</button>
+    <a id="predictButton" href="#" role="button">Predict</a>
 
+
+    <script type=text/javascript>
+      $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
     <script src="../static/js/draw.js"></script>
+    <script src="../static/js/script.js"></script>
+
   </body>
 </html>
