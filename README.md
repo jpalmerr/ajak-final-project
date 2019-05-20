@@ -70,6 +70,7 @@ and our AI machine will return a prediction of the shape name.
 - Google QuickDraw Dataset
 - Travis CI
 - Flask
+- Fabric JS
 
 ## Manifesto
 
