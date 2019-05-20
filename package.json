@@ -1,0 +1,33 @@
+{
+  "name": "ajak-final-project",
+  "version": "1.0.0",
+  "description": "A machine learning project in Weeks 11 and 12 for Makers Academy",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "dependencies": {
+    "fabric": "^3.0.0"
+  },
+  "devDependencies": {
+    "fabric": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpalmerr/ajak-final-project.git"
+  },
+  "keywords": [
+    "machine",
+    "learning"
+  ],
+  "author": "Alex Chen, Amy Jordan, James Palmer, Kim Diep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpalmerr/ajak-final-project/issues"
+  },
+  "homepage": "https://github.com/jpalmerr/ajak-final-project#readme"
+}
