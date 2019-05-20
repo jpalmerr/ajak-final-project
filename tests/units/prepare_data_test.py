@@ -4,6 +4,11 @@ import numpy as np
 sys.path.append('./lib')
 from prepare_data import *
 
+files = ["test.npy"]
+
+def test_load_returns_list_of_numpy_array():
+    assert type(load("tests/units/", files, True)) is list
+
 def test_normalize_returns_np_ndarray():
     assert type(normalize([1,2,3,4,5])) is np.ndarray
 
