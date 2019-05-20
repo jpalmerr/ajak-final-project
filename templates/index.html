@@ -6,6 +6,7 @@
 
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.0.0/fabric.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
 
   </head>
@@ -16,7 +17,7 @@
     <canvas id="canvas" width="280" height="280" style="float:left;border:8px solid; border-radius: 10px; cursor: crosshair;"></canvas>
     <div id="chartContainer" style="margin-left: 350px;height: 300px; display:none"></div>
 
-    <button type="button" id="clearButton" name="clearButton">Clear</button>
+    <button type="button" id="clear-canvas">Clear</button>
 
     <script src="../static/js/draw.js"></script>
   </body>
