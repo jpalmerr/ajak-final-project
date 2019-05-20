@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request
 import sys
+from PIL import Image
 sys.path.append('./lib')
 from drawing import *
-# from prediction import *
+from prediction import *
 import base64
 import re
 
@@ -23,9 +24,11 @@ def predict():
 
     imgData = request.get_data()
     imgData = convertImage(imgData)
+    imgData = Image.open("output.png")
     drawing = Drawing(imgData)
-    response = drawing.reshape()
-    # prediction = Prediction(drawing)
+    drawing = drawing.reshape()
+    prediction = Prediction(drawing)
+    return prediction.predict()
 
 if __name__ == "__main__":
     app.run(debug=True)
