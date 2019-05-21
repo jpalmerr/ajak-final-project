@@ -4,8 +4,6 @@ import sys
 sys.path.append('./lib')
 from prepare_data import *
 
-FILES = ["circles.npy", "squares.npy", "triangles.npy"]
-
 items = load("data/", FILES, True)
 
 items = set_limit(items, N_SAMPLES)
