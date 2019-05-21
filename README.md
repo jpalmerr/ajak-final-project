@@ -16,13 +16,15 @@ npm install # to install node dependencies
 
 ### To download data
 
-Download `Circle`, `Square` and `Triangle` from [Google QuickDraw Dataset](https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/numpy_bitmap) and save to `/data` folder in the project under `circles.npy`, `squares.npy` and `triangles.npy`.
+Download `Crown`, `Camera` and `Rabbit` from [Google QuickDraw Dataset](https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/numpy_bitmap) and save to `/data` folder in the project under `crowns.npy`, `cameras.npy` and `rabbits.npy`.
 
 ### To train model
 
 ```bash
 python3 model_config/train.py
 ```
+
+When prompted by running the above command, save the model as `cameras_rabbits_crowns_model`
 
 ### To see model predict random image from test data
 
