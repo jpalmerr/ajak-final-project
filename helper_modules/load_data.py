@@ -1,6 +1,8 @@
 from sklearn.model_selection import train_test_split as tts
-from prepare_data import *
 from constants import *
+import sys
+sys.path.append('./lib')
+from prepare_data import *
 
 FILES = ["circles.npy", "squares.npy", "triangles.npy"]
 
