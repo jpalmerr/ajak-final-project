@@ -6,6 +6,7 @@ from drawing import *
 from prediction import *
 import base64
 import re
+from keras import backend as K
 
 app = Flask(__name__)
 
@@ -30,8 +31,11 @@ def predict():
     new_image.convert('RGB').save('output.png')
     drawing = Drawing(new_image)
     drawing = drawing.reshape()
+
     prediction = Prediction(drawing)
-    return prediction.predict()
+    predictionNow = prediction.predict()
+    K.clear_session()
+    return predictionNow
 
 if __name__ == "__main__":
     app.run(debug=True)
