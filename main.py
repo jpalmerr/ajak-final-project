@@ -31,7 +31,6 @@ def predict():
     new_image.convert('RGB').save('output.png')
     drawing = Drawing(new_image)
     drawing = drawing.reshape()
-
     prediction = Prediction(drawing)
     predictionNow = prediction.predict()
     K.clear_session()
