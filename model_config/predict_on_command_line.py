@@ -6,7 +6,7 @@ from constants import *
 from load_data import *
 
 def predict_on_test_data_in_command_line():
-    model = load_model("./models/first_model_training.h5")
+    model = load_model("./models/cameras_rabbits_crowns_model.h5")
     # selects a random test case and shows the object, the prediction and the expected result
     n = randint(0, len(x_test))
     pred = ITEMS[np.argmax(model.predict(np.array([x_test[n]])))]

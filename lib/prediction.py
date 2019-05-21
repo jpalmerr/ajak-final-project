@@ -9,6 +9,6 @@ class Prediction():
         self.drawing = drawing
 
     def predict(self):
-        model = load_model("./models/first_model_training.h5")
+        model = load_model("./models/cameras_rabbits_crowns_model.h5")
         pred = ITEMS[np.argmax(model.predict(np.array([self.drawing])))]
         return pred
