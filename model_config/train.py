@@ -3,6 +3,7 @@ sys.path.append('./helper_modules')
 from constants import *
 from load_data import *
 from keras.utils import np_utils
+sys.path.append('./model_config')
 from prepare_data import *
 from conv import conv
 

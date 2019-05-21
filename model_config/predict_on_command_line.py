@@ -5,7 +5,7 @@ sys.path.append('./helper_modules')
 from constants import *
 from load_data import *
 
-def predict_on_test_data():
+def predict_on_test_data_in_command_line():
     model = load_model("./models/first_model_training.h5")
     # selects a random test case and shows the object, the prediction and the expected result
     n = randint(0, len(x_test))
@@ -15,4 +15,4 @@ def predict_on_test_data():
     print("Actual:", actual)
     print("Predicted:", pred)
 
-predict_on_test_data()
+predict_on_test_data_in_command_line()

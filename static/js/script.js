@@ -1,4 +1,5 @@
-$("#predictButton").click(function(){
+$("#predictButton").click(function(event){
+  event.preventDefault()
   var canvasObj = document.getElementById("canvas");
   var img = canvasObj.toDataURL();
   $.ajax({

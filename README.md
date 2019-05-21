@@ -10,27 +10,24 @@ This is our final project at Makers Academy, to be presented 24/5/19.
 
 ```bash
 git clone https://github.com/jpalmerr/ajak-final-project
-pip3 install -r requirements.txt # to install dependencies
-```
-
-```bash
-npm install
+pip3 install -r requirements.txt # to install python dependencies
+npm install # to install node dependencies
 ```
 
 ### To download data
 
-Download `Circle`, `Square` and `Triangle` from [Google QuickDraw Dataset](https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/numpy_bitmap) and save to `/data` folder in the project.
+Download `Circle`, `Square` and `Triangle` from [Google QuickDraw Dataset](https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/numpy_bitmap) and save to `/data` folder in the project under `circles.npy`, `squares.npy` and `triangles.npy`.
 
 ### To train model
 
 ```bash
-python3 lib/train.py
+python3 model_config/train.py
 ```
 
 ### To see model predict random image from test data
 
 ```bash
-python3 lib/predict.py
+python3 model_config/predict_on_command_line.py
 ```
 
 ### To run tests
@@ -49,7 +46,7 @@ We are using a linter called `pylint` for this project.
 
 To run the linter:    
 
-`pylint [options] module_or_package`    
+`pylint [options] module_or_package`     
 For example `pylint lib`
 
 ## Project aims

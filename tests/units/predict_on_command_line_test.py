@@ -1,10 +1,10 @@
 # import pytest
 # import sys
-# sys.path.append('./lib')
-# from predict import *
-
+# sys.path.append('./model_config')
+# from predict_on_command_line import *
+# 
 # def test_predict_on_test_data_to_stdout(capsys):
-#     predict_on_test_data()
+#     predict_on_test_data_in_command_line()
 #     captured = capsys.readouterr()
 #     assert 'Predicted' in captured.out
 #     assert 'Actual' in captured.out
