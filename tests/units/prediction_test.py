@@ -15,4 +15,4 @@ def test_can_make_prediction():
     drawing = Drawing(test_image)
     drawing = drawing.reshape()
     prediction = Prediction(drawing)
-    assert prediction.predict() == 'Square'
+    assert prediction.predict() == 'Triangle'

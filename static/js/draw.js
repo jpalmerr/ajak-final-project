@@ -11,6 +11,9 @@
 
   var clearEl = $('clear-canvas');
 
-  clearEl.onclick = function() { canvas.clear() };
+  clearEl.onclick = function() {
+    canvas.clear()
+    document.getElementById('result').innerHTML = ""
+  };
 
 })();
