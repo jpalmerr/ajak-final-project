@@ -28,7 +28,7 @@ def predict():
     image = Image.open("output.png")
     new_image = Image.new("RGBA", image.size, "WHITE")
     new_image.paste(image, (0, 0), image)
-    new_image.convert('RGB').save('output.png')
+    new_image.convert('RGBA').save('output.png')
     drawing = Drawing(new_image)
     drawing = drawing.reshape()
     prediction = Prediction(drawing)
