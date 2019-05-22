@@ -7,16 +7,14 @@ from drawing import *
 
 test_image = Image.open("tests/temp.png")
 
-def test_instantiate_new_image():
-  drawing = Drawing('test_data')
-  assert type(drawing) is Drawing
-
-def test_reshape_image_is_nparray():
+def test_reshape_image_returns_nparray():
+    'Drawing takes a png file and when calling reshape, returns np array'
     drawing = Drawing(test_image)
     drawing = drawing.reshape()
     assert type(drawing) is np.ndarray
 
 def test_reshape_image_is_normalized():
+    'Drawing takes a png file and when calling reshape, items in returned np array are normalized'
     drawing = Drawing(test_image)
     drawing = drawing.reshape()
     assert -1 <= drawing.all() <= 1
