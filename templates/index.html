@@ -8,123 +8,62 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.0.0/fabric.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}"> -->
-    <style>
-        h1 {
-          color: red;
-        }
-        .canvas {
-          float:left;
-          border: 8px solid;
-          border-radius: 10px;
-          cursor: crosshair;
-        }
-        .button {
-          /* margin-top: 25px; */
-          margin:20px;
-        }    
-        /* .centerBlock {
-          margin-left: auto;
-          margin-right: auto;
-          display:block;
-        } */
-        .flexbox-center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        }
-
-        #timer {
-          font-size: 60px
-
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 
   </head>
   <body>
     
       <div class="container">
-
         <h1 class="text-center">AJAK Doodle</h1>
-
         <div class="row align-items-center">
-          
           <div id="col" class="col-md-6">
                 <!-- things inside centerBlock -->
-                <div class="instructions" id="instructions">
-
-                  <p>Draw a:</p>
-
-                  <div class="d-flex">
-                      <ul class="list-inline mx-auto justify-content-center">
-                          <li>Camera</li>
-                          <li>Crown</li>
-                          <li>Rabbit</li>
-                      </ul>
-                  </div>
-
-                </div>
-
-                  <div class="flexbox-center">
-                      <canvas id="canvas" width="280" height="280" class="canvas"></canvas>
-                  </div>
-    
-                  
-                  <div class="flexbox-center">
-                      <button type="button" id="clear-canvas" class="button">Clear</button>
-
-                    
-
-                      <button type="button" id="predictButton" class="button" onclick="stopCountdown()">Predict</button>
-                  </div>
-
-            
+            <div class="instructions" id="instructions">
+              <p>Draw a:</p>
+              <div class="d-flex">
+                  <ul class="list-inline mx-auto justify-content-center">
+                      <li>Camera</li>
+                      <li>Crown</li>
+                      <li>Rabbit</li>
+                  </ul>
+              </div>
+            </div>
+            <div class="flexbox-center">
+                <canvas id="canvas" width="280" height="280" class="canvas"></canvas>
+            </div>
+            <div class="flexbox-center">
+                <button type="button" id="clear-canvas" class="button">Clear</button>
+                <button type="button" id="predictButton" class="button" onclick="stopCountdown()">Predict</button>
+            </div>
           </div>
-        
 
           <div id="col" class="col-md-6 text-center">
             <span id ='timer'>20</span>
-
-            <div class="container">
-                <span id="result"></span>
+              <div>
+                  <span id="result"></span>
+              </div>
+        
+              <div class="userConfirm" id="userConfirm">           
+                <p>Was this correct?</p>
+                <button onclick="correctCounter()">Yes</button>
+                <button onclick="incorrectCounter()">No</button>
+              </div>
           
-                  <div class="userConfirm" id="userConfirm">           
-                    <p>Was this correct?</p>
-                    <button onclick="correctCounter()">Yes</button>
-                    <button onclick="incorrectCounter()">No</button>
-                  </div>
-          
-                  <div class="performanceData" id="performanceData">
-          
-                  <div class="hiddenAttempts" id="hiddenAttempts">
-          
-                  </div>
-
+              <div class="performanceData" id="performanceData">
                   <p>% Correctly guessed: </p> <span id="percentageCorrect"></span>
-          
-                </div>
-                
-                <button id="playAgain">Play again</button>
-
-
+              </div>
+    
+              <div>
+                  <button id="playAgain">Play again</button>
+              </div>
           </div>
       </div>
-
-
-      
-
 
       <script type=text/javascript>
         $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
       </script>
       <script src="../static/js/draw.js"></script>
       <script src="../static/js/script.js"></script>
- 
-
-
-
   </body>
 
 </html>
