@@ -7,18 +7,21 @@
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.0.0/fabric.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 
   </head>
   <body>
-    <h1> AJAK's first Flask app</h1>
-    <p> Machine Learning is Fun </p>
+    <h1>AJAK Doodle</h1>
+    <div class="instructions" id="instructions">
+
     <p>Draw a</p>
     <ul>
     <li>Camera</li>
     <li>Crown</li>
     <li>Rabbit</li>
     </ul>
+    </div>
 
     <canvas id="canvas" width="280" height="280" class="canvas"></canvas>
     <span id ='timer'>20</span>
@@ -26,15 +29,22 @@
     <button id="predictButton" type="button" onclick="stopCountdown()">Predict</button>
     <span id="result"></span>
 
-    </br>
+    <div class="userConfirm" id="userConfirm">
+
     <p>Was this correct?</p>
     <button onclick="correctCounter()">Yes</button>
     <button onclick="incorrectCounter()">No</button>
 
-    <p>Total atttempts: </p><span id="totalAttempts"></span>
-    <p>Correct atttempts:</p><span id="correctAttempts"></span> 
+    </div>
+
+    <div class="performanceData" id="performanceData">
+
+      <div class="hiddenAttempts" id="hiddenAttempts">
+
+      </div>
     <p>% Correctly guessed: </p> <span id="percentageCorrect"></span>
-    </br>
+
+    </div>
     <button id="playAgain">Play again</button>
 
     <script type=text/javascript>
