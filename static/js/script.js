@@ -21,6 +21,7 @@ function correctCounter() {
       correctAttempts += 1
     } else {
       localStorage.clickcount = 1;
+      correctAttempts += 1
     }
     percentageTracker()
 }
@@ -42,5 +43,6 @@ function percentageTracker(){
 
 $("#playAgain").click(function(event){
   localStorage.clear();
+  correctAttempts = 0
   document.getElementById("percentageCorrect").innerHTML = 0
 })
