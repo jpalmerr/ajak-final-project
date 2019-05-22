@@ -11,17 +11,20 @@
 
   var clearEl = $('clear-canvas');
 
+  var n = 0;
+  var predictButtonClicked = false;
+
   clearEl.onclick = function() {
     canvas.clear()
     document.getElementById('result').innerHTML = ""
+    n = 0
+    predictButtonClicked = false
+    document.getElementById('timer').innerHTML = 30
   };
-
-  var n = 0;
-  var predictButtonClicked = false
 
   canvas.on('mouse:down', function() {
     if (n === 0) {
-      var timeLeft = 30;
+      var timeLeft = 20;
       var timer = document.getElementById('timer');
       var predictButton = document.getElementById('predictButton')
 
