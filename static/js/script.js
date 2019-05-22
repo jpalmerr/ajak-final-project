@@ -43,7 +43,19 @@ function percentageTracker(){
 
 }
 
+$("#playAgain").click(function(event){ 
+  localStorage.clear();
+  document.getElementById("totalAttempts").innerHTML = 0
+  document.getElementById("correctAttempts").innerHTML = 0
+  document.getElementById("percentageCorrect").innerHTML = 0
 
+})
+
+
+
+// function reset(){
+
+// }
 
 
 
