@@ -10,7 +10,7 @@ This is our final project at Makers Academy, to be presented 24/5/19.
 
 Visit our web app, [Ajak Doodler](https://ajak-doodler.herokuapp.com/)!
 
-[Getting started](#getting-started) | [Project aims](#project-aims) | [Technologies](#technologies) | [Manifesto](#manifesto) | [Authors](#authors) | [Acknowledgements](#acknowledgements)
+[Getting started](#getting-started) | [Project aims](#project-aims) | [Technologies](#technologies) | [Manifesto](#manifesto) |  [Learning documentation](#learning-documentation) | [Authors](#authors) | [Acknowledgements](#acknowledgements)
 
 ## Getting started
 
@@ -30,7 +30,8 @@ Download `Crown`, `Camera` and `Rabbit` from [Google QuickDraw Dataset](https://
 python3 model_config/train.py
 ```
 
-When prompted by running the above command, save the model as `cameras_rabbits_crowns_model`
+When prompted by running the above command, save the model as `cameras_rabbits_crowns_model`.
+Move the saved model to the `/models` folder.
 
 ### To see model predict random image from test data
 
@@ -82,6 +83,10 @@ and our AI machine will return a prediction of the drawing.
 Our project [manifesto](https://github.com/jpalmerr/ajak-final-project/blob/master/manifesto.md).
 
 Our [Trello board](https://trello.com/b/SAOvMM1v/ajak).
+
+## Learning documentation
+
+See our [wiki](https://github.com/jpalmerr/ajak-final-project/wiki).
 
 ## Authors
 
