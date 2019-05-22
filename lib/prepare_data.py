@@ -1,11 +1,11 @@
 import numpy as np
 
-def load(dir, files, reshaped):
+def load(directory, files, reshaped):
     "returning list of numpy arrays"
 
     data = []
     for file in files:
-        f = np.load(dir + file)
+        f = np.load(directory + file)
         if reshaped:
             new_f = []
             for i in range(len(f)):

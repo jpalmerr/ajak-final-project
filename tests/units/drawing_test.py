@@ -11,7 +11,7 @@ def test_reshape_image_returns_nparray():
     'Drawing takes a png file and #reshape returns np array'
     drawing = Drawing(test_image)
     drawing = drawing.reshape()
-    assert type(drawing) is np.ndarray
+    assert isinstance(drawing, np.ndarray)
 
 def test_reshape_image_is_normalized():
     'Drawing takes a png file and #reshape returns array with normalized items'
