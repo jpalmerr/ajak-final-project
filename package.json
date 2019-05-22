@@ -11,7 +11,8 @@
     "fabric": "^3.0.0"
   },
   "devDependencies": {
-    "fabric": "^3.0.0"
+    "fabric": "^3.0.0",
+    "jest": "^24.8.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
