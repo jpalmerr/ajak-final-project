@@ -12,46 +12,58 @@
 
   </head>
   <body>
-    <h1>AJAK Doodle</h1>
-    <div class="instructions" id="instructions">
+    
+      <div class="container">
+        <h1 class="text-center">AJAK Doodle</h1>
+        <div class="row align-items-center">
+          <div id="col" class="col-md-6">
+                <!-- things inside centerBlock -->
+            <div class="instructions" id="instructions">
+              <p>Draw a:</p>
+              <div class="d-flex">
+                  <ul class="list-inline mx-auto justify-content-center">
+                      <li>Camera</li>
+                      <li>Crown</li>
+                      <li>Rabbit</li>
+                  </ul>
+              </div>
+            </div>
+            <div class="flexbox-center">
+                <canvas id="canvas" width="280" height="280" class="canvas"></canvas>
+            </div>
+            <div class="flexbox-center">
+                <button type="button" id="clear-canvas" class="button">Clear</button>
+                <button type="button" id="predictButton" class="button" onclick="stopCountdown()">Predict</button>
+            </div>
+          </div>
 
-    <p>Draw a</p>
-    <ul>
-    <li>Camera</li>
-    <li>Crown</li>
-    <li>Rabbit</li>
-    </ul>
-    </div>
-
-    <canvas id="canvas" width="280" height="280" class="canvas"></canvas>
-    <span id ='timer'>20</span>
-    <button type="button" id="clear-canvas" class="clear-button">Clear</button>
-    <button id="predictButton" type="button" onclick="stopCountdown()">Predict</button>
-    <span id="result"></span>
-
-    <div class="userConfirm" id="userConfirm">
-
-    <p>Was this correct?</p>
-    <button onclick="correctCounter()">Yes</button>
-    <button onclick="incorrectCounter()">No</button>
-
-    </div>
-
-    <div class="performanceData" id="performanceData">
-
-      <div class="hiddenAttempts" id="hiddenAttempts">
-
+          <div id="col" class="col-md-6 text-center">
+            <span id ='timer'>20</span>
+              <div>
+                  <span id="result"></span>
+              </div>
+        
+              <div class="userConfirm" id="userConfirm">           
+                <p>Was this correct?</p>
+                <button onclick="correctCounter()">Yes</button>
+                <button onclick="incorrectCounter()">No</button>
+              </div>
+          
+              <div class="performanceData" id="performanceData">
+                  <p>% Correctly guessed: </p> <span id="percentageCorrect"></span>
+              </div>
+    
+              <div>
+                  <button id="playAgain">Play again</button>
+              </div>
+          </div>
       </div>
-    <p>% Correctly guessed: </p> <span id="percentageCorrect"></span>
 
-    </div>
-    <button id="playAgain">Play again</button>
-
-    <script type=text/javascript>
-      $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
-    </script>
-    <script src="../static/js/draw.js"></script>
-    <script src="../static/js/script.js"></script>
-
+      <script type=text/javascript>
+        $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+      </script>
+      <script src="../static/js/draw.js"></script>
+      <script src="../static/js/script.js"></script>
   </body>
+
 </html>
