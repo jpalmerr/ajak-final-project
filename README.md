@@ -1,8 +1,14 @@
 # Ajak Final Project
 
 [![Build Status](https://travis-ci.com/jpalmerr/ajak-final-project.svg?branch=master)](https://travis-ci.com/jpalmerr/ajak-final-project)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
+
+
 
 This is our final project at Makers Academy, to be presented 24/5/19.
+
+Visit our web app, [Ajak Doodler](https://ajak-doodler.herokuapp.com/)!
 
 [Getting started](#getting-started) | [Project aims](#project-aims) | [Technologies](#technologies) | [Manifesto](#manifesto) | [Authors](#authors) | [Acknowledgements](#acknowledgements)
 
@@ -53,12 +59,12 @@ For example `pylint lib`
 
 ## Project aims
 
-Our program aims to receive a user inputted shape from:
-- circle
-- square
-- triangle
+Our program aims to receive a user's drawing of a:
+- crown
+- camera
+- rabbit
 
-and our AI machine will return a prediction of the shape name.
+and our AI machine will return a prediction of the drawing.
 
 ## Technologies
 
