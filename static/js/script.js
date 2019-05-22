@@ -12,16 +12,14 @@ $("#predictButton").click(function(event){
   });
 });
 
-var correctAttempts = 0
-
 function correctCounter() {
 
     if (localStorage.clickcount) {
       localStorage.clickcount = Number(localStorage.clickcount)+1;
-      correctAttempts += 1
+      localStorage.correctAttempts = Number(localStorage.correctAttempts)+1 
     } else {
       localStorage.clickcount = 1;
-      correctAttempts += 1
+      localStorage.correctAttempts = 1 
     }
     percentageTracker()
 }
@@ -31,18 +29,18 @@ function incorrectCounter() {
     localStorage.clickcount = Number(localStorage.clickcount)+1;
   } else {
     localStorage.clickcount = 1;
+    localStorage.correctAttempts = 0
   }
   percentageTracker()
 }
 
 function percentageTracker(){
   var totalAttempts = localStorage.clickcount
-  var percentage = (correctAttempts / totalAttempts) * 100
+  var percentage = (localStorage.correctAttempts / totalAttempts) * 100
   document.getElementById("percentageCorrect").innerHTML = Math.round(percentage)
 }
 
 $("#playAgain").click(function(event){
   localStorage.clear();
-  correctAttempts = 0
-  document.getElementById("percentageCorrect").innerHTML = 0
+  document.getElementById("percentageCorrect").innerHTML = ""
 })
