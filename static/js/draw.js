@@ -16,19 +16,26 @@
     document.getElementById('result').innerHTML = ""
   };
 
-  var timeLeft = 30;
-  var element = document.getElementById('timer');
+  var n = 0;
 
-  var timerId = setInterval(countdown, 1000);
+  canvas.on('mouse:down', function() {
+    if (n === 0) {
+      var timeLeft = 30;
+      var element = document.getElementById('timer');
 
-  function countdown() {
-    if (timeLeft == 0) {
-      clearTimeout(timerId);
-      document.getElementById('predictButton').click();
-    } else {
-      element.innerHTML = timeLeft;
-      timeLeft--;
+      var timerId = setInterval(countdown, 1000);
+
+      function countdown() {
+        if (timeLeft == 0) {
+          clearTimeout(timerId);
+          document.getElementById('predictButton').click();
+        } else {
+          element.innerHTML = timeLeft;
+          timeLeft--;
+        }
+      }
     }
-  }
+    n += 1
+  });
 
 })();
