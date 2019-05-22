@@ -25,6 +25,17 @@
     <button id="predictButton" type="button">Predict</button>
     <span id="result"></span>
 
+    </br>
+    <p>Was this correct?</p>
+    <button onclick="correctCounter()">Yes</button>
+    <button onclick="incorrectCounter()">No</button>
+
+    <p>Total atttempts: </p><span id="totalAttempts"></span>
+    <p>Correct atttempts:</p><span id="correctAttempts"></span> 
+    <p>% Correctly guessed: </p> <span id="percentageCorrect"></span>
+    </br>
+    <button id="playAgain">Play again</button>
+
     <script type=text/javascript>
       $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
     </script>
