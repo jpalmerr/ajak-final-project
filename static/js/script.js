@@ -32,7 +32,6 @@ function incorrectCounter() {
   }
   document.getElementById("totalAttempts").innerHTML = localStorage.clickcount;
   percentageTracker()
-
 }
 
 function percentageTracker(){
@@ -40,7 +39,6 @@ function percentageTracker(){
   var correctAttempts = parseInt(document.getElementById('correctAttempts').innerHTML)
   var percentage = (correctAttempts / totalAttempts) * 100 
   document.getElementById("percentageCorrect").innerHTML = Math.round(percentage)
-
 }
 
 $("#playAgain").click(function(event){ 
@@ -48,38 +46,5 @@ $("#playAgain").click(function(event){
   document.getElementById("totalAttempts").innerHTML = 0
   document.getElementById("correctAttempts").innerHTML = 0
   document.getElementById("percentageCorrect").innerHTML = 0
-
 })
 
-
-
-// function reset(){
-
-// }
-
-
-
-
-
-
-// $("#correctPrediction").click(function(event){
-//   event.preventDefault()
-
-//   var n = localStorage.getItem('totalAttempts')
-
-// // create localstorage
-
-//   console.log(n)
-
-//   if (n === null) {
-
-//     n = 0;
-//   }
-//   n++
-
-//   localStorage.setItem('totalAttempts', n);
-
-//   document.getElementById('totalAttempts').innerHTML = n
-
-// increase count
-// })
