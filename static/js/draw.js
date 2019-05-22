@@ -19,7 +19,7 @@
     document.getElementById('result').innerHTML = ""
     n = 0
     predictButtonClicked = false
-    document.getElementById('timer').innerHTML = 30
+    document.getElementById('timer').innerHTML = 20
   };
 
   canvas.on('mouse:down', function() {
