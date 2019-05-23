@@ -28,7 +28,7 @@
     if (n === 0) {
       var timeLeft = 20;
       var timer = document.getElementById('timer');
-      var predictButton = document.getElementById('predictButton')
+      var predictButton = document.getElementById('predict-button')
 
       var timerId = setInterval(countdown, 1000);
 
