@@ -1,27 +1,29 @@
 
-        h1 {
-          color: red;
-        }
-        .canvas {
-          float:left;
-          border: 8px solid;
-          border-radius: 10px;
-          cursor: crosshair;
-        }
-        .button {
-          /* margin-top: 25px; */
-          margin:20px;
-        }    
-        .flexbox-center {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        }
+h1 {
+  color: red;
+}
+.canvas {
+  float:left;
+  border: 8px solid;
+  border-radius: 10px;
+  cursor: crosshair;
+}
+.button {
+  margin:20px;
+}
+#reset-score{
+  margin-top: 25px;
+}
+.flexbox-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-        #timer {
-          font-size: 60px
+#timer {
+  font-size: 60px
 
-        }
-        #result {
-          font-size: 30px
-        }
+}
+#result {
+  font-size: 30px
+}
