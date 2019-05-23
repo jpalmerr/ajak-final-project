@@ -8,6 +8,7 @@ h1 {
 body {
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
+  background-image: url('./legal-pad-979558_1920.png')
 }
 
 .canvas {
