@@ -17,9 +17,11 @@
   clearEl.onclick = function() {
     canvas.clear()
     document.getElementById('result').innerHTML = ""
-    n = 0
-    predictButtonClicked = false
-    document.getElementById('timer').innerHTML = 20
+    if (predictButtonClicked === true) {
+      n = 0
+      predictButtonClicked = false
+      document.getElementById('timer').innerHTML = 20
+    }
   };
 
   canvas.on('mouse:down', function() {
