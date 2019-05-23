@@ -17,16 +17,18 @@
   clearEl.onclick = function() {
     canvas.clear()
     document.getElementById('result').innerHTML = ""
-    n = 0
-    predictButtonClicked = false
-    document.getElementById('timer').innerHTML = 20
+    if (predictButtonClicked === true) {
+      n = 0
+      predictButtonClicked = false
+      document.getElementById('timer').innerHTML = 20
+    }
   };
 
   canvas.on('mouse:down', function() {
     if (n === 0) {
       var timeLeft = 20;
       var timer = document.getElementById('timer');
-      var predictButton = document.getElementById('predictButton')
+      var predictButton = document.getElementById('predict-button')
 
       var timerId = setInterval(countdown, 1000);
 

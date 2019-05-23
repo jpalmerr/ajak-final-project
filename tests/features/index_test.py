@@ -20,7 +20,7 @@ def test_views_predict_button():
     browser = Browser('flask', app=app)
 
     browser.visit('http://127.0.0.1:5000/')
-    assert browser.is_element_present_by_id("predictButton")
+    assert browser.is_element_present_by_id("predict-button")
 
     browser.quit()
 

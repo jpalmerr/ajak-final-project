@@ -12,20 +12,18 @@
 
   </head>
   <body>
-    
+
       <div class="container">
         <h1 class="text-center">AJAK Doodle</h1>
         <div class="row align-items-center">
           <div id="col" class="col-md-6">
                 <!-- things inside centerBlock -->
             <div class="instructions" id="instructions">
-              <p>Draw a:</p>
               <div class="d-flex">
-                  <ul class="list-inline mx-auto justify-content-center">
-                      <li>Camera</li>
-                      <li>Crown</li>
-                      <li>Rabbit</li>
-                  </ul>
+                <ul class="list-inline mx-auto justify-content-center">
+                  <li>Draw a:</li>
+                  <li>Camera | Crown | Rabbit</li>
+                </ul>
               </div>
             </div>
             <div class="flexbox-center">
@@ -33,7 +31,7 @@
             </div>
             <div class="flexbox-center">
                 <button type="button" id="clear-canvas" class="button">Clear</button>
-                <button type="button" id="predictButton" class="button" onclick="stopCountdown()">Predict</button>
+                <button type="button" id="predict-button" class="button" onclick="stopCountdown()">Predict</button>
             </div>
           </div>
 
@@ -42,19 +40,19 @@
               <div>
                   <span id="result"></span>
               </div>
-        
-              <div class="userConfirm" id="userConfirm">           
+
+              <div class="user-confirm" id="user-confirm">
                 <p>Was this correct?</p>
                 <button onclick="correctCounter()">Yes</button>
                 <button onclick="incorrectCounter()">No</button>
               </div>
-          
-              <div class="performanceData" id="performanceData">
-                  <p>% Correctly guessed: </p> <span id="percentageCorrect"></span>
+
+              <div class="performance-data" id="performance-data">
+                  <span id="percentage-correct"></span>
               </div>
-    
+
               <div>
-                  <button id="playAgain">Play again</button>
+                  <button id="reset-score">Reset score</button>
               </div>
           </div>
       </div>
