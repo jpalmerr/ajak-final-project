@@ -4,8 +4,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
-
-
 This is our final project at Makers Academy, to be presented 24/5/19.
 
 Visit our web app, [Ajak Doodler](https://ajak-doodler.herokuapp.com/)!
@@ -70,13 +68,18 @@ and our AI machine will return a prediction of the drawing.
 ## Technologies
 
 - Python
+- Pytest
+- Splinter
+- Flask
 - SKLearn library
 - Keras API
 - TensorFlow
 - Google QuickDraw Dataset
-- Travis CI
-- Flask
+- JavaScript
+- jQuery
 - Fabric JS
+- Travis CI
+- Heroku
 
 ## Manifesto
 
