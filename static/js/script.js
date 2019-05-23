@@ -37,7 +37,7 @@ function incorrectCounter() {
 function percentageTracker(){
   var totalAttempts = localStorage.clickcount
   var percentage = (localStorage.correctAttempts / totalAttempts) * 100
-  document.getElementById("percentage-correct").innerHTML = `% correctly guessed: ${Math.round(percentage)}`
+  document.getElementById("percentage-correct").innerHTML = `Correctly guessed: ${Math.round(percentage)}%`
 }
 
 $("#reset-score").click(function(event){

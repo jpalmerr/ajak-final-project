@@ -1,19 +1,30 @@
-
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Amatic+SC&display=swap');
 h1 {
   color: red;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 7rem;
 }
+
+body {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+}
+
 .canvas {
   float:left;
   border: 8px solid;
   border-radius: 10px;
   cursor: crosshair;
 }
+
 .button {
   margin:20px;
 }
+
 #reset-score{
   margin-top: 25px;
 }
+
 .flexbox-center {
   display: flex;
   align-items: center;
@@ -21,9 +32,17 @@ h1 {
 }
 
 #timer {
-  font-size: 60px
-
+  font-size: 7rem;
 }
+
 #result {
-  font-size: 30px
+  font-size: 2.5rem;
+}
+
+.performance-data {
+  margin-top: 25px;
+}
+
+#percentage-correct {
+  font-size: 2rem;
 }
