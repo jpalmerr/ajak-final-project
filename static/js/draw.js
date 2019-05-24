@@ -26,7 +26,7 @@
 
   canvas.on('mouse:down', function() {
     if (n === 0) {
-      var timeLeft = 20;
+      var timeLeft = 19;
       var timer = document.getElementById('timer');
       var predictButton = document.getElementById('predict-button')
 
