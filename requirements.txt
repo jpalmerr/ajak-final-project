@@ -34,7 +34,7 @@ more-itertools==7.0.0
 ndjson==0.1.0
 numpy==1.16.3
 pandas==0.24.2
-Pillow==6.0.0
+Pillow==9.0.0
 pluggy==0.11.0
 protobuf==3.7.1
 py==1.8.0
